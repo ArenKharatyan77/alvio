@@ -1,0 +1,192 @@
+$black: #000;
+$white: #fff;
+$green: #01996d;
+$darkGreen: #424242;
+$headerBorder: #d6d6d6;
+
+.header {
+  padding: 30px 0;
+  border-bottom: 1px solid $headerBorder;
+  .container {
+    max-width: 1413px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 16px;
+    .parentBlock {
+      display: flex;
+      justify-content: space-between;
+      .logo {
+        gap: 172px;
+        display: flex;
+        align-items: center;
+        @media screen and (max-width: 1280px) {
+          gap: 100px;
+        }
+        @media screen and (max-width: 1024px) {
+          gap: 70px;
+        }
+        @media screen and (max-width: 768px) {
+          gap: 50px;
+        }
+        @media screen and (max-width: 480px) {
+          gap: 20px;
+        }
+      }
+      display: flex;
+      .link {
+        gap: 72px;
+        display: flex;
+        @media screen and (max-width: 1280px) {
+          gap: 40px;
+        }
+        @media screen and (max-width: 992px) {
+          display: none;
+        }
+        li {
+          font-family: "Lato", sans-serif;
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 100%;
+          letter-spacing: 0%;
+        }
+      }
+      .signInLogIn {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        @media screen and (max-width: 468px) {
+          gap: 10px;
+        }
+        .signIn {
+          background: none;
+          border: none;
+          font-family: Lato;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 100%;
+          letter-spacing: 0%;
+          color: $black;
+          @media screen and (max-width: 468px) {
+            font-size: 15px;
+          }
+        }
+        .startIn {
+          background: $green;
+          border: 1px solid $green;
+          padding: 13px 50px;
+          border-radius: 4px;
+          color: $white;
+          font-family: Lato;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 25px;
+          letter-spacing: 0px;
+          text-align: center;
+          @media screen and (max-width: 468px) {
+            font-size: 12px;
+            padding: 5px 20px;
+          }
+        }
+      }
+    }
+    .mobileNav {
+      position: fixed;
+      top: 0;
+      right: -100%;
+      width: 260px;
+      height: 100vh;
+      background: $white;
+      box-shadow: -2px 0 10px rgba(0, 0, 0, 0.15);
+      padding: 45px 30px;
+      transition: right 0.3s ease;
+      z-index: 100;
+      display: none;
+      @media screen and (max-width: 992px) {
+        display: block;
+      }
+      .mobileNavTop {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 40px;
+        .closeBtn {
+          background: none;
+          border: none;
+          cursor: pointer;
+          display: flex;
+          flex-direction: column;
+          gap: 5px;
+          padding: 4px;
+          span {
+            width: 25px;
+            height: 2px;
+            border-radius: 5px;
+            background-color: $black;
+            &:nth-child(1) {
+              transform: translateY(3.5px) rotate(45deg);
+            }
+            &:nth-child(2) {
+              transform: translateY(-3.5px) rotate(-45deg);
+            }
+          }
+        }
+      }
+      &.open {
+        right: 0;
+      }
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        li {
+          font-family: "Lato", sans-serif;
+          font-weight: 500;
+          font-size: 20px;
+        }
+      }
+    }
+    .overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.4);
+      z-index: 99;
+      display: none;
+      @media screen and (max-width: 992px) {
+        display: block;
+      }
+    }
+    .burgerMenu {
+      border: none;
+      background-color: transparent;
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      align-self: center;
+      position: relative;
+      z-index: 200;
+      @media screen and (max-width: 992px) {
+        display: flex;
+      }
+      span {
+        width: 25px;
+        height: 2px;
+        border-radius: 5px;
+        background-color: $black;
+        transition:
+          transform 0.3s ease,
+          opacity 0.3s ease;
+      }
+      &.open {
+        span:nth-child(1) {
+          transform: translateY(7px) rotate(45deg);
+        }
+        span:nth-child(2) {
+          opacity: 0;
+        }
+        span:nth-child(3) {
+          transform: translateY(-7px) rotate(-45deg);
+        }
+      }
+    }
+  }
+}

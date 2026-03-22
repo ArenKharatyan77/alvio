@@ -1,0 +1,86 @@
+$black: #000;
+$white: #fff;
+$green: #01996d;
+$darkGreen: #424242;
+$darkGreen2: #484848;
+$headerBorder: #d6d6d6;
+
+.enumerateSection {
+  margin-bottom: 51px;
+  @media screen and (max-width: 768px) {
+    margin-bottom: 20px;
+  }
+  .container {
+    max-width: 1413px;
+    width: 100%;
+    margin: 0 auto; 
+    padding: 0 16px;
+    p {
+      font-family: "Lato";
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 157%;
+      letter-spacing: 0%;
+      color: $darkGreen;
+    }
+    .aboutEnumerate {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      margin-bottom: 52px;
+      @media screen and (max-width: 992px) {
+        flex-direction: column;
+      }
+      h2 {
+        max-width: 584px;
+        font-family: "Georgia";
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 157%;
+        letter-spacing: 0%;
+        color: #01996d;
+        @media screen and (max-width: 1536px) {
+          font-size: 35px;
+          max-width: 584px;
+        }
+        @media screen and (max-width: 768px) {
+          max-width: unset;
+        }
+      }
+      p {
+        font-family: "Lato";
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 150%;
+        letter-spacing: 0%;
+        color: $darkGreen;
+        max-width: 671px;
+        @media screen and (max-width: 1536px) {
+          font-size: 16px;
+          max-width: 484px;
+        }
+        @media screen and (max-width: 768px) {
+          max-width: unset;
+        }
+      }
+    }
+    .numerate {
+      display: flex;
+      gap: 20px;
+      justify-content: space-between;
+      @media screen and (max-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+        .cardOffset {
+          margin-top: 0;
+        }
+      }
+      .cardOffset {
+        margin-top: 153px;
+        @media screen and (max-width:768px){
+          margin: unset;
+        }
+      }
+    }
+  }
+}

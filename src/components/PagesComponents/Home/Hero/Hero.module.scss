@@ -1,0 +1,104 @@
+$black: #000;
+$white: #fff;
+$green: #01996d;
+$darkGreen: #424242;
+$darkGreen2: #484848;
+$headerBorder: #d6d6d6;
+
+.backgroundImage {
+  margin-bottom: 170px;
+  position: relative;
+  background-image: url("/images/home/background.jpg");
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  padding-top: 175px;
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+      linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+      linear-gradient(112.58deg, #ffffff 18.15%, rgba(255, 255, 255, 0) 53.07%);
+  }
+  @media screen and (max-width: 1536px) {
+    padding-top: 140px;
+    margin-bottom: 150px;
+  }
+  @media screen and (max-width: 1280px) {
+    padding-top: 140px;
+    margin-bottom: 120px;
+  }
+  @media screen and (max-width: 1024px) {
+    padding-top: 100px;
+    margin-bottom: 90px;
+  }
+  @media screen and (max-width: 768px) {
+    padding-top: 100px;
+    margin-bottom: 50px;
+  }
+  .container {
+    max-width: 1413px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 16px;
+    .heroBlock {
+      position: relative;
+      z-index: 5;
+      max-width: 440px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      color: $green;
+      @media screen and (max-width: 768px) {
+        margin: 0 auto;
+        text-align: center;
+      }
+      h1 {
+        font-family: "Georgia";
+        font-weight: 700;
+        font-size: 65px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        @media screen and (max-width: 1536px) {
+          font-size: 50px;
+        }
+        @media screen and (max-width: 1280px) {
+          font-size: 40px;
+        }
+        @media screen and (max-width: 1024px) {
+          font-size: 35px;
+        }
+        @media screen and (max-width: 768px) {
+          font-size: 30px;
+        }
+      }
+      p {
+        font-family: "Lato";
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 157%;
+        letter-spacing: 0%;
+        color: $darkGreen2;
+      }
+      button {
+        font-family: "Lato";
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 25px;
+        letter-spacing: 0px;
+        text-align: center;
+        color: #ffffff;
+        border: 1px solid $green;
+        background: $green;
+        max-width: 227px;
+        padding: 20px 40px;
+        border-radius: 4px;
+        @media screen and (max-width: 768px) {
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}

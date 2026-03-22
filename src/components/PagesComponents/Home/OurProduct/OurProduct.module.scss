@@ -1,0 +1,61 @@
+$black: #000;
+$white: #fff;
+$green: #01996d;
+$darkGreen: #424242;
+$darkGreen2: #484848;
+$headerBorder: #d6d6d6;
+$background: #245852;
+$lightGreen: #01996d33;
+
+.sectionProduct {
+  padding-top: 120px;
+  padding-bottom: 168px;
+  @media screen and (max-width: 1280px) {
+    padding-top: 100px;
+    padding-bottom: 128px;
+  }
+  @media screen and (max-width: 1024px) {
+    padding-top: 80px;
+    padding-bottom: 100px;
+  }
+  @media screen and (max-width: 768px) {
+    padding-top: 50px;
+    padding-bottom: 80px;
+  }
+  @media screen and (max-width: 480px) {
+    padding-top: 50px;
+    padding-bottom: 50 px;
+  }
+  .container {
+    max-width: 1370px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 16px;
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+
+    @media screen and (max-width: 1024px) {
+      gap: 40px;
+    }
+    .parent{
+      .imageBlock{
+        position: relative;
+        img{
+        background-color: $lightGreen;
+
+        }
+        .customizedBlock{
+          border: 0.75px solid $black;
+          box-shadow: 0px 3.62px 18.11px 0px #A5A5A540;
+          width: 296px;
+          height: 293px;
+          position: absolute;
+          bottom: -74px;
+          left: -64px;
+          background-color: $white;
+        }
+      }
+    }
+  }
+}

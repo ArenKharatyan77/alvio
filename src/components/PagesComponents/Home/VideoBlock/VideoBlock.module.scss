@@ -1,0 +1,126 @@
+$black: #000;
+$white: #fff;
+$green: #01996d;
+$darkGreen: #424242;
+$darkGreen2: #484848;
+$headerBorder: #d6d6d6;
+$background: #245852;
+
+.sectionBack {
+  background-color: $background;
+  max-width: 100%;
+  padding-top: 229px;
+  padding-bottom: 170px;
+  @media screen and (max-width: 1280px) {
+    padding-top: 160px;
+    padding-bottom: 120px;
+  }
+  @media screen and (max-width: 1024px) {
+    padding-top: 100px;
+    padding-bottom: 80px;
+  }
+  @media screen and (max-width: 768px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @media screen and (max-width: 480px) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .container {
+    max-width: 1413px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 16px;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    @media screen and (max-width: 1024px) {
+      flex-direction: column;
+      text-align: center;
+    }
+    .aboutBlock {
+      max-width: 580px;
+      display: flex;
+      flex-direction: column;
+      gap: 33px;
+      @media screen and (max-width: 1024px) {
+        max-width: 100%;
+        align-items: center;
+        gap: 24px;
+      }
+      @media screen and (max-width: 480px) {
+        gap: 16px;
+      }
+      h3 {
+        font-family: "Georgia";
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 157%;
+        letter-spacing: 0%;
+        color: $white;
+        @media screen and (max-width: 1280px) {
+          font-size: 38px;
+        }
+        @media screen and (max-width: 768px) {
+          font-size: 28px;
+        }
+        @media screen and (max-width: 480px) {
+          font-size: 22px;
+        }
+      }
+      p {
+        font-family: "Lato";
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 157%;
+        letter-spacing: 0%;
+        color: $white;
+        @media screen and (max-width: 1280px) {
+          font-size: 20px;
+        }
+        @media screen and (max-width: 768px) {
+          font-size: 16px;
+        }
+      }
+      button {
+        font-family: "Lato";
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 25px;
+        letter-spacing: 0px;
+        color: $white;
+        border: 1px solid $green;
+        background-color: $green;
+        border-radius: 4px;
+        padding: 20px 40px;
+        max-width: 240px;
+        cursor: pointer;
+        @media screen and (max-width: 768px) {
+          font-size: 16px;
+          padding: 14px 30px;
+        }
+        @media screen and (max-width: 480px) {
+          font-size: 14px;
+          padding: 12px 24px;
+        }
+      }
+    }
+    .videoBlock {
+      width: 100%;
+      video {
+        border-radius: 16px;
+        max-width: 895px;
+        width: 100%;
+        height: auto;
+        min-height: unset;
+        display: block;
+        @media screen and (max-width: 1024px) {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}
