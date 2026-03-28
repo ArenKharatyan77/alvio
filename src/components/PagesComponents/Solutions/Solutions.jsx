@@ -1,8 +1,11 @@
 import React from 'react'
+import SolutionsBlock from './SolutionsBlock/Solutions';
 
 const Solutions = () => {
   return (
-    <div>Solutions</div>
+    <div>
+      <SolutionsBlock/>
+    </div>
   )
 }
 

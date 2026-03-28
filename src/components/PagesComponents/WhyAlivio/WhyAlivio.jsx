@@ -1,8 +1,11 @@
 import React from 'react'
+import AlivioBlock from './AlivioBlock/AlivioBlock'
 
 const WhyAlivio = () => {
   return (
-    <div>WhyAlivio</div>
+    <div>
+      <AlivioBlock/>
+    </div>
   )
 }
 

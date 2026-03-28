@@ -1,0 +1,96 @@
+$black: #000;
+$white: #fff;
+$green: #01996d;
+$darkGreen: #424242;
+$headerBorder: #d6d6d6;
+$backgroundFooter: #245852;
+
+.footer {
+  background-color: $backgroundFooter;
+  padding: 95px 0;
+
+  @media screen and (max-width: 1280px) {
+    padding: 75px 0;
+  }
+  @media screen and (max-width: 1024px) {
+    padding: 60px 0;
+  }
+  @media screen and (max-width: 768px) {
+    padding: 50px 0;
+  }
+  @media screen and (max-width: 480px) {
+    padding: 36px 0;
+  }
+
+  .container {
+    max-width: 1413px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 16px;
+  }
+
+  .link {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+
+    @media screen and (max-width: 1280px) {
+      gap: 48px;
+    }
+    @media screen and (max-width: 1024px) {
+      gap: 36px;
+    }
+    @media screen and (max-width: 768px) {
+      gap: 24px;
+    }
+    @media screen and (max-width: 480px) {
+      gap: 18px;
+    }
+
+    li {
+      &:first-child {
+        font-family: "Avenir";
+        font-weight: 900;
+        font-size: 40px;
+        line-height: 100%;
+        letter-spacing: 0%;
+
+        @media screen and (max-width: 1280px) {
+          font-size: 34px;
+        }
+        @media screen and (max-width: 1024px) {
+          font-size: 30px;
+        }
+        @media screen and (max-width: 768px) {
+          font-size: 26px;
+        }
+        @media screen and (max-width: 480px) {
+          font-size: 22px;
+        }
+      }
+
+      font-family: "Lato";
+      font-weight: 600;
+      font-size: 25px;
+      line-height: 100%;
+      letter-spacing: 0%;
+
+      @media screen and (max-width: 1280px) {
+        font-size: 20px;
+      }
+      @media screen and (max-width: 1024px) {
+        font-size: 18px;
+      }
+      @media screen and (max-width: 768px) {
+        font-size: 16px;
+      }
+      @media screen and (max-width: 480px) {
+        font-size: 14px;
+      }
+    }
+
+    a {
+      color: $white;
+    }
+  }
+}

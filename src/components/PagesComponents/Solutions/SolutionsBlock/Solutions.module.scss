@@ -1,0 +1,164 @@
+$white: #fff;
+$green: #01996d;
+$darkGreen: #424242;
+$darkGreen2: #484848;
+$headerBorder: #d6d6d6;
+$background: #245852;
+$lightGreen: #01996d33;
+
+.parentBlock {
+  margin-top: 80px;
+  margin-bottom: 120px;
+
+  @media screen and (max-width: 1280px) {
+    margin-top: 60px;
+    margin-bottom: 90px;
+  }
+  @media screen and (max-width: 1024px) {
+    margin-top: 50px;
+    margin-bottom: 70px;
+  }
+  @media screen and (max-width: 768px) {
+    margin-top: 40px;
+    margin-bottom: 50px;
+  }
+  @media screen and (max-width: 480px) {
+    margin-top: 30px;
+    margin-bottom: 40px;
+  }
+
+  .container {
+    max-width: 1413px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    @media screen and (max-width: 1024px) {
+      gap: 40px;
+      justify-content: center;
+    }
+    @media screen and (max-width: 768px) {
+      gap: 30px;
+    }
+    @media screen and (max-width: 480px) {
+      gap: 24px;
+    }
+  }
+
+  .slutionsBlock {
+    display: flex;
+    gap: 80px;
+
+    @media screen and (max-width: 1280px) {
+      gap: 60px;
+    }
+    @media screen and (max-width: 1024px) {
+      gap: 40px;
+    }
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      gap: 24px;
+    }
+    @media screen and (max-width: 480px) {
+      gap: 16px;
+    }
+
+    .block1 {
+      img {
+        border-radius: 20px;
+        width: 600px;
+
+        @media screen and (max-width: 1280px) {
+          width: 480px;
+        }
+        @media screen and (max-width: 1024px) {
+          width: 380px;
+        }
+        @media screen and (max-width: 768px) {
+          width: 100%;
+          border-radius: 12px;
+        }
+      }
+    }
+
+    .block2 {
+      align-self: center;
+
+      @media screen and (max-width: 768px) {
+        text-align: center;
+      }
+
+      h2 {
+        font-family: Georgia;
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 157%;
+        letter-spacing: 0%;
+        color: $green;
+
+        @media screen and (max-width: 1280px) {
+          font-size: 40px;
+        }
+        @media screen and (max-width: 1024px) {
+          font-size: 32px;
+        }
+        @media screen and (max-width: 768px) {
+          font-size: 26px;
+        }
+        @media screen and (max-width: 480px) {
+          font-size: 22px;
+        }
+      }
+
+      p {
+        font-family: "Lato";
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 150%;
+        letter-spacing: 0%;
+        color: #484848;
+
+        @media screen and (max-width: 1280px) {
+          font-size: 18px;
+        }
+        @media screen and (max-width: 1024px) {
+          font-size: 16px;
+        }
+        @media screen and (max-width: 768px) {
+          font-size: 15px;
+        }
+        @media screen and (max-width: 480px) {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  .aboutBlock {
+    p {
+      font-family: "Lato";
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 150%;
+      letter-spacing: 0%;
+      color: #484848;
+
+      @media screen and (max-width: 1280px) {
+        font-size: 18px;
+      }
+      @media screen and (max-width: 1024px) {
+        font-size: 16px;
+      }
+      @media screen and (max-width: 768px) {
+        font-size: 15px;
+        text-align: center;
+      }
+      @media screen and (max-width: 480px) {
+        font-size: 14px;
+      }
+    }
+  }
+}
