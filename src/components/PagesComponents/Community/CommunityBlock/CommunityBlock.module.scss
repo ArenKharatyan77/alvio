@@ -1,0 +1,25 @@
+$black: #000;
+$white: #fff;
+$green: #01996d;
+$darkGreen: #424242;
+$darkGreen2: #484848;
+$headerBorder: #d6d6d6;
+$background: #245852;
+$lightGreen: #01996d33;
+
+.parentBlock {
+  .container {
+    max-width: 1413px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+
+    @media screen and (max-width: 1024px) {
+      gap: 40px;
+      justify-content: center;
+    }
+  }
+}

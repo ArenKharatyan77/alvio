@@ -1,8 +1,11 @@
 import React from 'react'
+import PricingBlock from './PricingBlock/PricingBlock'
 
 const Pricing = () => {
   return (
-    <div>Pricing</div>
+    <div>
+      <PricingBlock />
+    </div>
   )
 }
 

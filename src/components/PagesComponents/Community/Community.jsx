@@ -1,8 +1,11 @@
 import React from 'react'
+import CommunityBlock from './CommunityBlock/CommunityBlock'
 
 const Community = () => {
   return (
-    <div>Community</div>
+    <div>
+      <CommunityBlock/>
+    </div>
   )
 }
 
